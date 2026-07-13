@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<BorderPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/25" fx:controller="com.univalle._0zo.controller.TableController">
+<BorderPane prefHeight="366.0" prefWidth="798.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.univalle._0zo.controller.TableController">
 
     <!-- Arriba: jugadores máquina -->
     <top>
@@ -14,18 +14,19 @@
             <padding>
                 <Insets bottom="10.0" left="20.0" right="20.0" top="20.0" />
             </padding>
-            <Label fx:id="machine1Label" text="Máquina 1" style="-fx-font-size: 14px;" />
-            <Label fx:id="machine2Label" text="Máquina 2" style="-fx-font-size: 14px;" />
-            <Label fx:id="machine3Label" text="Máquina 3" style="-fx-font-size: 14px;" />
+            <Label fx:id="machine1Label" style="-fx-font-size: 14px;" text="Máquina 1" />
+            <Label fx:id="machine2Label" style="-fx-font-size: 14px;" text="Máquina 2" />
+            <Label fx:id="machine3Label" style="-fx-font-size: 14px;" text="Máquina 3" />
         </HBox>
     </top>
 
     <!-- Centro: mesa -->
     <center>
         <VBox alignment="CENTER" spacing="10.0">
-            <Label text="MESA" style="-fx-font-size: 20px; -fx-font-weight: bold;" />
-            <Label fx:id="tableCardLabel" text="Carta: ???" style="-fx-font-size: 16px;" />
-            <Label fx:id="tableSumLabel" text="Suma: 0" style="-fx-font-size: 18px; -fx-font-weight: bold;" />
+            <Label style="-fx-font-size: 20px; -fx-font-weight: bold;" text="MESA" />
+            <Label fx:id="tableCardLabel" style="-fx-font-size: 16px;" text="Carta: ???" />
+            <Label fx:id="tableSumLabel" style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Suma: 0" />
+            <Label fx:id="statusLabel" style="-fx-font-size: 13px; -fx-text-fill: #555;" text="" />
         </VBox>
     </center>
 
@@ -35,7 +36,7 @@
             <padding>
                 <Insets bottom="20.0" left="20.0" right="20.0" top="10.0" />
             </padding>
-            <Label text="Tu mano" style="-fx-font-size: 14px; -fx-font-weight: bold;" />
+            <Label style="-fx-font-size: 14px; -fx-font-weight: bold;" text="Tu mano" />
             <HBox fx:id="playerHandBox" alignment="CENTER" spacing="10.0" />
         </VBox>
     </bottom>

@@ -22,7 +22,6 @@ public class GameView extends Stage{
         setTitle("50zo");
         setScene(scene);
         setResizable(false);
-        gameController.initialize();
     }
         
     

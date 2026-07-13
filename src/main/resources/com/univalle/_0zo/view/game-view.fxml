@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.VBox?>
 
 <VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/25" fx:controller="com.univalle._0zo.controller.GameController">
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
+
+    <Label text="50ZO" style="-fx-font-size: 32px; -fx-font-weight: bold;" />
+    <Label text="¿Contra cuántas máquinas quieres jugar?" style="-fx-font-size: 14px;" />
+
+    <Button fx:id="btn1Machine" text="1 Máquina" onAction="#onSelectMachines" />
+    <Button fx:id="btn2Machines" text="2 Máquinas" onAction="#onSelectMachines" />
+    <Button fx:id="btn3Machines" text="3 Máquinas" onAction="#onSelectMachines" />
 </VBox>
